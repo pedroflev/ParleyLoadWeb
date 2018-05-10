@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>Carga Imágen YuBots</title>
+
+<!-- <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel='stylesheet' /> -->
+<link href="assets/css/style.css" rel="stylesheet" />
+<meta charset="utf-8"/> 
+<link rel="stylesheet" href="dist/timepicker.min.css" />
+
+<!-- <script type="text/javascript" src="jquery-1.2.6.min.js"></script> -->
+<img src="cabezal.png" class="ui-btn-right" />
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<!-- <title>jQuery UI Datepicker - Default functionality</title> -->
+<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+<!--  <link rel="stylesheet" href="/resources/demos/style.css"> -->
+<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+<!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+<script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  });
+</script>
+
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  
+<script>
+  $(document).ready(function() {
+    $("#datepicker").datepicker();
+  });
+</script>
+
+</head>
+
+<body>
+
+<div id="container">
+  <div id="content">
+       
+    <!--Explicación-->
+    <br>
+    <h2 align="center">Carga de imágenes</h2>
+    <br>
+    <p style="font-family: 'Helvetica';text-align:center; font-size:20 ">Selecciona la fecha de divulgación del contenido.<!--<br /><br />  <br>
+     </p>
+        
+	<!-- Selección de  fecha-->
+			<!--Botón para seleccionar fecha-->
+            <div align="center", class="demo">
+       	  	  <form>
+			  <a style="font-family: 'Helvetica';text-align:center; font-size:18 "> Fecha: </a>   <input id="datepicker" />
+			  </form>
+			</div>
+    <!--/demo-->
+  </div>
+</div>
+
+<!-- ______________________________________ -->
+
+
+
+<!-- ______________________________________ -->
+
+
+
+<!-- Arrastrar y cargar imágen -->
+
+	<form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+	            <div id="drop">
+	                Soltar Imágen
+	                <a>Buscar</a>
+	                <input type="file" name="upl" multiple />
+	            </div>
+
+	            <ul>
+	                <!-- Las imágenes que se cargan se guardn aquí -->
+	            </ul>
+	</form>
+
+	        <!-- JavaScript Includes -->
+	        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+	        <script src="assets/js/jquery.knob.js"></script>
+
+	        <!-- jQuery File Upload Dependencies -->
+	        <script src="assets/js/jquery.ui.widget.js"></script>
+	        <script src="assets/js/jquery.iframe-transport.js"></script>
+	        <script src="assets/js/jquery.fileupload.js"></script>
+
+	        <!-- Our main JS file -->
+	        <script src="script_query.js"></script>
+
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+ $("#msgid").html("");
+});
+
+</script>
+
+<div id="msgid">
+</div>
+
+</body>
+</html>
