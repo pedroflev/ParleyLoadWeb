@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<title> Login </title>
+	<style type="text/css">
+	#loginbox{
+		width: 240px;
+		height: 140px;
+		margin: 0px auto;
+		margin-top:150px;	
+	}
+	</style>
+</head>
+<body>
+<div id = "loginbox">	
+	<input id = "usermane" type = "text" placeholder = "Usuario"/>
+	<br>
+	<input id = "password" type="password" placeholder = "Contraseña"/>
+	<br>
+	<button>Sign in</button>
+</div>
+<div id = "container"></div> 
+
+<script type="text/javascript">
+$("button").click(function(){
+
+	var usermane = $("#usermane").val();
+	var password = $("#password").val();
+
+	$.post("server.php", {login:usermane, password:password},function(data){
+		console.log(data);
+	});
+
+	
+});
+
+</script>
+
+</body>
+</html>
